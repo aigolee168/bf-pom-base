@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.bf</groupId>
   <artifactId>bf-pom-base</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -95,7 +95,7 @@
               </goals>
             </execution>
           </executions>
-        </plugin>
+        </plugin><!-- 
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
@@ -106,7 +106,7 @@
               <version>1.0</version>
             </dependency>
           </dependencies>
-        </plugin>
+        </plugin> -->
       </plugins>
     </pluginManagement>
   </build>
@@ -152,10 +152,18 @@
       <url>http://127.0.0.1:9000/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
     <downloadUrl>http://10.211.55.3/project/bf-pom-base</downloadUrl>
-    <site>
+    <!-- <site>
       <id>website</id>
       <name>my virtual machine sites</name>
       <url>scp://10.211.55.3/home/limin/sites/bf-pom-base</url>
-    </site>
-  </distributionManagement>
+    </site> -->
+  </distributionManagement><!-- 
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.8</version>
+      </plugin>
+    </plugins>
+  </reporting> -->
 </project>
